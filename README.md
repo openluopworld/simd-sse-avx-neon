@@ -23,5 +23,5 @@ typedef union __declspec(intrin_type) _CRT_ALIGN(16) __m128i {
 #endif
 ```
 
-[//]:
+[//]: #
    [__m128i]: <https://github.com/joemccann/dillinger>
