@@ -23,5 +23,23 @@ typedef union __declspec(intrin_type) _CRT_ALIGN(16) __m128i {
 #endif
 ```
 
+### Test supporting
+```C
+#include <stdio.h>
+#include <emmintrin.h>
+
+int main (void ) {
+
+	__m128i a = _mm_set1_epi8(0x11);
+
+	return 0;
+
+}
+```
+Compile with
+```sh
+$ gcc -march=native test.c
+```
+
 [//]: #
    [__m128i]: <https://github.com/joemccann/dillinger>
