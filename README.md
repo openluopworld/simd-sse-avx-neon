@@ -1,5 +1,7 @@
 
-### SSE
+## [SIMD Instructions]
+
+## SSE
 
 1. [__m128i]<br>
 ```C
@@ -23,7 +25,17 @@ typedef union __declspec(intrin_type) _CRT_ALIGN(16) __m128i {
 #endif
 ```
 
-### Test supporting
+2. SSE2
++ __m128i _mm_unpackhi_epi16 (__m128i a, __m128i b)
++ __m128i _mm_unpackhi_epi32 (__m128i a, __m128i b)
++ __m128i _mm_unpackhi_epi64 (__m128i a, __m128i b)
++ __m128i _mm_unpackhi_epi8 (__m128i a, __m128i b)
++ __m128i _mm_unpacklo_epi16 (__m128i a, __m128i b)
++ __m128i _mm_unpacklo_epi32 (__m128i a, __m128i b)
++ __m128i _mm_unpacklo_epi64 (__m128i a, __m128i b)
++ __m128i _mm_unpacklo_epi8 (__m128i a, __m128i b)
+
+## Test supporting
 ```C
 #include <stdio.h>
 #include <emmintrin.h>
@@ -41,5 +53,4 @@ Compile with
 $ gcc -march=native test.c
 ```
 
-[//]: #
-   [__m128i]: <https://github.com/joemccann/dillinger>
+[SIMD Instructions]:<https://software.intel.com/sites/landingpage/IntrinsicsGuide/>
