@@ -40,6 +40,9 @@ typedef union __declspec(intrin_type) _CRT_ALIGN(16) __m128i {
 + __m128i _mm_and_si128 (__m128i a, __m128i b)
 + __m128i _mm_slli_epi16 (__m128i a, int imm8)
 + __m128i _mm_srli_epi16 (__m128i a, int imm8)
++ __m128i _mm_add_epi16 (__m128i a, __m128i b)
++ __m128i _mm_adds_epi16 (__m128i a, __m128i b)
+  - [两个加法的不同]在于，add会舍弃进位，adds会在溢出时将结果设置为最大值或最小值
 
 ## Test supporting
 ```C
@@ -47,11 +50,8 @@ typedef union __declspec(intrin_type) _CRT_ALIGN(16) __m128i {
 #include <emmintrin.h>
 
 int main (void ) {
-
 	__m128i a = _mm_set1_epi8(0x11);
-
 	return 0;
-
 }
 ```
 Compile with
@@ -60,3 +60,4 @@ $ gcc -march=native test.c
 ```
 
 [SIMD Instructions]:<https://software.intel.com/sites/landingpage/IntrinsicsGuide/>
+[两个加法的不同]:<https://stackoverflow.com/questions/12141075/what-does-unsignedsaturate-in-sse-instruction-mean>
