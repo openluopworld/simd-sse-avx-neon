@@ -34,6 +34,12 @@ typedef union __declspec(intrin_type) _CRT_ALIGN(16) __m128i {
 + __m128i _mm_unpacklo_epi32 (__m128i a, __m128i b)
 + __m128i _mm_unpacklo_epi64 (__m128i a, __m128i b)
 + __m128i _mm_unpacklo_epi8 (__m128i a, __m128i b)
++ void _mm_storeu_si128 (__m128i* mem_addr, __m128i a)
++ __m128i _mm_xor_si128 (__m128i a, __m128i b)
++ __m128i _mm_or_si128 (__m128i a, __m128i b)
++ __m128i _mm_and_si128 (__m128i a, __m128i b)
++ __m128i _mm_slli_epi16 (__m128i a, int imm8)
++ __m128i _mm_srli_epi16 (__m128i a, int imm8)
 
 ## Test supporting
 ```C
