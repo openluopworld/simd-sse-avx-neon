@@ -59,6 +59,9 @@ $ gcc -march=native test.c
 ```
 ## AVX
 
+### Projects
++ [FastMemcpy](https://github.com/skywind3000/FastMemcpy)
+
 ## ARM NEON
 
 ### NEON intrinsics
