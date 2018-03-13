@@ -117,6 +117,12 @@ $ gcc -march=native test.c
 + [ARM Compiler Version 5.06 armasm user guide](http://infocenter.arm.com/help/topic/com.arm.doc.dui0473m/DUI0473M_armasm_user_guide.pdf)指令描述更加详细，有图示
 + [objdump](https://en.wikipedia.org/wiki/Objdump) is a program for displaying various information about object files on Unix-like systems
 + [How to check the existence of NEON on arm?](https://stackoverflow.com/questions/26701262/how-to-check-the-existence-of-neon-on-arm)
++ [ARMv8 Instruction Set Overview](https://ww.element14.com/community/servlet/JiveServlet/previewBody/41836-102-1-229511/ARM.Reference_Manual.pdf)
++ [ARM Assembly Local Labels](https://stackoverflow.com/questions/32341112/arm-assembly-local-labels)
++ [Useful assembler directives and macros for the GNU assembler](https://community.arm.com/processors/b/blog/posts/useful-assembler-directives-and-macros-for-the-gnu-assembler)
++ [A64 Shift and Extend Operations: Operand Modifiers](https://community.arm.com/processors/b/blog/posts/a64-shift-and-extend-operations-operand-modifiers)
++ (vip)[Accelerated AES for the ARM64 Linux kernel](https://www.linaro.org/blog/accelerated-aes-for-the-arm64-linux-kernel/), AES-NEON性能评估，代码作者撰写
++ [makefiles CFLAGES](https://stackoverflow.com/questions/80657/makefiles-cflags) -D, 编译宏定义
 
 [SIMD Instructions]:<https://software.intel.com/sites/landingpage/IntrinsicsGuide/>
 [两个加法的不同]:<https://stackoverflow.com/questions/12141075/what-does-unsignedsaturate-in-sse-instruction-mean>
